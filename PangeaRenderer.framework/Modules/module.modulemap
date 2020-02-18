@@ -1,0 +1,12 @@
+framework module PangeaRenderer {
+    explicit module Bridge [extern_c] {
+        umbrella header "/Users/yivane/Developer/pangea/maps-pangea-renderer/v2/experimental/pangearenderer-api/include/pangearenderer-api.h"
+        link "/Users/yivane/Developer/pangea/maps-pangea-renderer/v2/experimental/pangearenderer-ios/build/libpangearenderer-ios.a"
+        export *
+    }
+}
+
+module PangeaRenderer.Swift {
+    header "PangeaRenderer-Swift.h"
+    requires objc
+}
